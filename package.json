@@ -1,0 +1,31 @@
+{
+  "name": "robi-graphics-metadata",
+  "productName": "ROBI Graphics",
+  "version": "1.0.0",
+  "description": "ROBI Graphics - AI Metadata Generator",
+  "main": "electron/main.js",
+  "author": "ROBI Graphics",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win portable --x64"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/filesystem": "^6.0.1",
+    "@capacitor/share": "^6.0.2"
+  },
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.robigraphics.metadata",
+    "productName": "ROBI Graphics",
+    "directories": { "output": "dist-pc" },
+    "files": ["electron/**/*", "www/**/*", "package.json"],
+    "win": { "icon": "build/icon.png", "target": ["portable"] },
+    "portable": { "artifactName": "ROBI-Graphics-PC.exe" }
+  }
+}

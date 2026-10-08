@@ -1,0 +1,7 @@
+{
+  "appId": "com.robigraphics.metadata",
+  "appName": "ROBI Graphics",
+  "webDir": "www",
+  "server": { "androidScheme": "https" },
+  "android": { "allowMixedContent": false }
+}
